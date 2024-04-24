@@ -1,5 +1,7 @@
 ## Getting Started
 
+Repositorio para desenvolvimento de atividades do Bootcamp Santander Ministrado pela DIO
+
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
