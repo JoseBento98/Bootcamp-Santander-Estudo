@@ -1,5 +1,12 @@
 public class MinhaClasse {
     public static void main(String[] args) {
-        System.out.println("Olá turma, sejam bem-vindos");
+        String nomeDeCarro = "Dodge";
+
+        int anoFabricação = 2024;
+
+        boolean carro = true;
+
+        
+
     }
 }
