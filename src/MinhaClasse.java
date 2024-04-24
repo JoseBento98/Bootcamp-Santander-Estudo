@@ -13,7 +13,7 @@ public class MinhaClasse {
     }
 
     public static String nomeDoFabricante (String primeiroNome, String segundoNome){
-        return primeiroNome.concat(" ").concat(segundoNome);
+        return "Resultado do método: " + primeiroNome.concat(" ").concat(segundoNome);
     }
 
 
