@@ -6,5 +6,8 @@ public class tiposEVariaveis {
         long cpf = 98765432109L; // se começar com zero, talvez tenha que ser outro tipo, Obrigatorio L no final
         float pi = 3.14F; // precisa de F no final
         double salario = 1275.33;
+
+        final double VALOR_DE_PI = 3.14; // desta maneira não pode ser alterada
+
     }
 }
