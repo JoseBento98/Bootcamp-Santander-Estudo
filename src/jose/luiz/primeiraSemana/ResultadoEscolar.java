@@ -2,18 +2,9 @@ package jose.luiz.primeirasemana;
 
 public class ResultadoEscolar {
     public static void main(String[] args) {
-        int nota =6;
-
-        if (nota >=7) {
-            System.out.println("Aprovado");
-        } 
+        int nota =7;
+        String resultado = nota >=7 ? "Aprovado" : nota >=5 && nota <6 ?  "Recuperação" : "reprovado"; //condição Ternária
         
-        else if (nota >= 5 && nota < 7) { // sempre retorna true ou false
-            System.out.println("Prova de Recuperação");
-        }
-
-        else {
-            System.out.println("Reprovado");
-        }
+        System.out.println(resultado);
     }
 }
