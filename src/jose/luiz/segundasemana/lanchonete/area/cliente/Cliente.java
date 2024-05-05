@@ -1,4 +1,4 @@
-package jose.luiz.segundasemana.lanchonete;
+package jose.luiz.segundasemana.lanchonete.area.cliente;
 
 import java.security.PublicKey;
 
@@ -10,12 +10,13 @@ public class Cliente {
                     System.out.println("FAZENDO O PEDIDO");
           }
           public void pagarConta() {
+                    colsultarSaldoAplicativo();
                     System.out.println("PAGANDO A CONTA");
           }
-          public void colsultarSaldoAplicativo () {
+          private void colsultarSaldoAplicativo () {
                     System.out.println("CONSULTANDO SALDO NO APLICATIVO");
           }
-          public void pegarPedidoBalcao () {
-                    System.out.println("PEGANDO O PEDIDO NO BALCAO");
-          }
+         // public void pegarPedidoBalcao () {
+          //          System.out.println("PEGANDO O PEDIDO NO BALCAO");
+         // }
 }

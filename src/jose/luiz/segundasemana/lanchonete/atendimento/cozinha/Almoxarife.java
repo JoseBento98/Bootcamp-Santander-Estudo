@@ -1,18 +1,20 @@
-package jose.luiz.segundasemana.lanchonete;
+package jose.luiz.segundasemana.lanchonete.atendimento.cozinha;
 
 import java.security.PublicKey;
 
 public class Almoxarife {
-          public void ControlarEntrada () {
+          private void ControlarEntrada () {
                     System.out.println("CONTROLANDO A ENTRADA DOS ITENS");
           }
-          public void controlarSaida () {
+          private void controlarSaida () {
                     System.out.println("CONTROLANDO A SAIDA DOS ITENS");
           }
-          public void entregarIngredientes () {
+          void entregarIngredientes () {
                     System.out.println("ENTREGANDO INGREDIENTES");
+                    controlarSaida();
           }
-          public void trocarGas () {
+          //retirando o public torno ele default
+          void trocarGas () {
                     System.out.println("ALMOXARIFE TROCANDO O GAS");    
           }
 }
