@@ -3,7 +3,7 @@ package jose.luiz.segundasemana;
 public class SistemaDeCadastro {
           public static void main(String[] args) {
                     //criando uma pessoa no sistema
-                    Pessoa marcos = new Pessoa();
+                    Pessoa marcos = new Pessoa("123", "Marcos");
 
                     //definimos o endereço de marcos
                     marcos.setEndereco("RUA DAS MARIAS");
