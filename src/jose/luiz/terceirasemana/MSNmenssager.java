@@ -5,6 +5,7 @@ public class MSNmenssager extends ServicoMenssagenEstantanea {
           //inserindo abstração
           
           public void enviarMensagem() {
+                    validarConectadoInternet();
                     System.out.println("Enviamendo Mensagem pelo MSN ..."); 
           }
 

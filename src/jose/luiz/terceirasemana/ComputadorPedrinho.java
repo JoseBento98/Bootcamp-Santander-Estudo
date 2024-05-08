@@ -2,17 +2,23 @@ package jose.luiz.terceirasemana;
 
 public class ComputadorPedrinho {
           public static void main(String[] args) {
-                    //abrindo MSN messenger
-                    MSNmenssager msn = new MSNmenssager();
-                    msn.enviarMensagem();
-                    msn.receberMensagem();
+                    ServicoMenssagenEstantanea smi = null;
+                    /*
+                     * NÃO SE SABE QUAL APP
+                     * MAS QUALQUER UM DEVERÁ ENVIAR E RECEBER MENSAGEM
+                     * POLIMORFISMO
+                     */
+                    String appEscolhido = "tlg";
 
-                    FacebookMessenger fb = new FacebookMessenger();
-                    fb.enviarMensagem();
-                    fb.receberMensagem();
-
-                    TelegranMessenger tl = new TelegranMessenger ();
-                    tl.enviarMensagem();
-                    tl.receberMensagem(); 
+                    if (appEscolhido.equals("msn"))
+                              smi = new MSNmenssager();
+                    else if (appEscolhido.equals("fbm"))
+                              smi = new FacebookMessenger();
+                    else if (appEscolhido.equals("tlg")) 
+                              smi = new TelegranMessenger();
+                    
+                    smi.enviarMensagem();
+                    smi.receberMensagem();
+                    
           }
 }
